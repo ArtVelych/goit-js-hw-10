@@ -1,6 +1,6 @@
 #datetime-picker {
-    width: 272px;
-    height: 40px;
+    width: 256px;
+    height: 32px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #808080;
@@ -9,6 +9,8 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    padding: 8px 16px;
+    margin-left: 50px;
 }
 
 #datetime-picker:hover {
@@ -22,39 +24,51 @@
 button {
     border-radius: 8px;
     padding: 8px 16px;
-    width: 75px;
-    height: 40px;
+    min-width: 59px;
+    height: 42px;
     display: inline-flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     color: #989898;
     background: #cfcfcf;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
+/* button:hover,
+button:focus {
+    background-color: #404BBF;
+} */
+
 .timer {
+    width: 346px;
+    height: 72px;
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
+    margin-left: 50px;
+    margin-top: 32px;
 }
 
 .field {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .value {
     color: #2e2f42;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: 1.6px;
-    margin-top: 40px;
+    letter-spacing: 0.04em;
 }
 
 .label {
     color: #2e2f42;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    text-transform: uppercase;
 }
