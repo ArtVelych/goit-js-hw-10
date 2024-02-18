@@ -89,7 +89,7 @@ function startTimer() {
       button.disabled = true;
       input.disabled = false;
       button.style.backgroundColor = '#cfcfcf';
-      button.style.color = '#989898'; 
+      button.style.color = '#989898';
     } else {
       const timeObject = convertMs(difference);
       displayTime(timeObject);
@@ -107,6 +107,5 @@ function displayTime({ days, hours, minutes, seconds }) {
 button.addEventListener('click', () => {
   button.disabled = true;
   input.disabled = true;
-  input.style.backgroundColor = '#fafafa;';
   startTimer();
 });
